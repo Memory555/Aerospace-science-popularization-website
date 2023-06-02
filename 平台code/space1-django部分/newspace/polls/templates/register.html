@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>注册</title>
+    <link rel="stylesheet" type="text/css" href="/static/css/login.css"/>
+</head>
+<body background="https://img0.baidu.com/it/u=1072687640,787698248&fm=26&fmt=auto"
+style=" background-repeat:no-repeat ;background-size:100% 100%;background-attachment: fixed;">
+    <div id="login">
+        <h1>Register</h1>
+        <form action="/polls/register/" method="post">
+            {% csrf_token %}
+            <input type="text" required="required" placeholder="用户名" name="u"></input>
+            <input type="password" required="required" placeholder="密码" name="p"></input>
+            <input type="email" required="required" placeholder="邮箱" name="e"></input>
+            <input type="phone" required="required" placeholder="手机号" name="ph"></input>
+            <input type="date" required="required" placeholder="出生日期" name="b"></input>
+            <button class="but" type="submit">注册</button>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,107 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>首页</title>
+<link type="text/css" rel="stylesheet" href="/static/css/shouye.css" />
+<link rel="stylesheet" href="/static/css/owl.carousel.css"/>
+<script type="text/javascript" src="/static/js/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="/static/js/superslide.2.1.js"></script>
+<script type="text/javascript" src="/static/js/my.js"></script>
+</head>
+
+<body>
+<div class="header">
+  <div class="heaer_con">
+     <h1 class="header_h1">联系我们：XXX</h1>
+     <div class="header_rightLine"></div>
+     <h1 class="header_h1">关注我们</h1>
+     <div class="header_weixin">
+        <img src="/static/images/chat.png" />
+     </div>
+     <div class="header_weixinBig">
+        <img src="images/erweima-1.png" />
+     </div>
+      <ul>
+       <li><a href="../toregister/">注册</a></li>
+       <li><div class="header_rightLine"></div></li>
+       <li><a href="../">登录</a></li>
+     </ul>
+  </div>
+</div>
+
+<div class="clear"></div>
+<div class="nav">
+  <div class="nav_logo"><img src="/static/images/biaoti2.png" width="400" height="90"/></div>
+  <ul class="nav_navs">
+     <a><li class="on">首  页</li></a>
+     <a href="toknow/"><li>航天科普</li></a>
+     <a href="toshuju/"><li>形势分析</li></a>
+     <a href="tonewguide/"><li>新手引导</li></a>
+     <a href="tohelp/"><li>帮助中心</li></a>
+     <a href="tomy/"><li>个人中心</li></a>
+  </ul>
+</div>
+
+<div class="clear"></div>
+<div class="fullSlide">
+  <div class="bd">
+    <ul>
+      <li _src="url(/static/images/img2.png)" style=" background-repeat:no-repeat ;background-size:100% 100%;background-attachment: fixed;"></li>
+      <li _src="url(/static/images/img1.png)" style=" background-repeat:no-repeat ;background-size:100% 100%;background-attachment: fixed;"></li>
+      <li _src="url(/static/images/img3.png)" style=" background-repeat:no-repeat ;background-size:100% 100%;background-attachment: fixed;"></li>
+    </ul>
+  </div>
+  <div class="hd">
+    <ul>
+    </ul>
+  </div>
+  <span class="prev"></span> <span class="next"></span> </div>
+<script type="text/javascript">
+jQuery(".fullSlide").hover(function() {
+    jQuery(this).find(".prev,.next").stop(true, true).fadeTo("show", 0.5)
+},
+function() {
+    jQuery(this).find(".prev,.next").fadeOut()
+});
+jQuery(".fullSlide").slide({
+    titCell: ".hd ul",
+    mainCell: ".bd ul",
+    effect: "fold",
+    autoPlay: true,
+    autoPage: true,
+    trigger: "click",
+    startFun: function(i) {
+        var curLi = jQuery(".fullSlide .bd li").eq(i);
+        if ( !! curLi.attr("_src")) {
+            curLi.css("background-image", curLi.attr("_src")).removeAttr("_src")
+        }
+    }
+});
+</script>
+<div style="text-align:center;clear:both"></div>
+
+<div class="gzjr">
+  <div class="tit">关于我们</div>
+  <img src="/static/images/arrow-down.png" class="dashline"/>
+  <div class="sub">
+      <div>“征途”（英文名：zhengtu）由大学生于2021年开发的一款平台。</div>
+      <div>“错过了落日余晖，还会有满天星辰。”</div>
+      <div class="titblue">平台简介：</div>
+      <div>此平台通过对网络上丛横交错的信息进行整合，以可视化的方式为用户刨析当前中国航天发展实力。</div>
+      <div>让相关数据不再干燥无味，艰涩难懂，也让用户便捷了解到中国在航天发展的优势与不足。</div>
+      <div class="titblue">平台亮点：</div>
+      <div>梦启九州，壮凌空之志；缘定寰宇，铭空天之魂。</div>
+      <div>东风长征破万里，神舟天宫闯星海。</div>
+      <div>忆往昔东方红星，看今朝长五升天。</div>
+      <div class="titblue">平台期望：</div>
+      <div>不断优化，不断完善。</div>
+      <div>宇宙无穷 探索不止！</div>
+  </div>
+  <div class="clear"></div>
+  <a href="javascript:;" class="showP"><img src="/static/images/arrow-up.gif" class="aUp"/><img src="/static/images/arrow-down.gif" class="aDown"/></a>
+</div>
+
+<div class="gzjr">
+   <div class="tit">星空浩淼银河璀璨，航天穷宇矢志不移</div>
+</div>

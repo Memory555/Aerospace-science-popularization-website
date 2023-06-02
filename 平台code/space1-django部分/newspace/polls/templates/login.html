@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>登录</title>
+    <link rel="stylesheet" type="text/css" href="/static/css/login.css"/>
+</head>
+<!--<body background="https://img1.baidu.com/it/u=2760224480,920353408&fm=26&fmt=auto">-->
+<body background="https://img1.baidu.com/it/u=2760224480,920353408&fm=26&fmt=auto"
+style=" background-repeat:no-repeat ;background-size:100% 100%;background-attachment: fixed;">
+    <div id="login">
+        <h1>Login</h1>
+        <form action="/polls/index/" method="post">
+            {% csrf_token %}
+            <input type="text" required="required" placeholder="用户名" name="u"></input>
+            <input type="password" required="required" placeholder="密码" name="p"></input>
+            <button class="but" type="submit">登录</button>
+        </form>
+        <div class="reg-bar">
+            <a class="reg" href="toregister">立即注册</a>
+            <a class="forget" href="toforget">忘记密码</a>
+            </div>
+    </div>
+</body>
+</html>
